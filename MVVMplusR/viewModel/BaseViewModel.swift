@@ -8,7 +8,13 @@
 
 import Foundation
 
-class BaseViewModel: BaseViewModelProtocol {
+class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
+
+    let router: Router?
+
+    init(router: Router? = nil) {
+        self.router = router
+    }
 
     // MARK: View Lifecycle
     
