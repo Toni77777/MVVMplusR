@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class BaseRouter: RouterType {
+
+    private(set) weak var view: ViewType?
+
+    init(view: ViewType) {
+        self.view = view
+    }
+}

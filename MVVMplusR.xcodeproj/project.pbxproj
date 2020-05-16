@@ -15,6 +15,8 @@
 		0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1533C247006DD00A8410C /* BaseViewModel.swift */; };
 		0CA1533F247006F300A8410C /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */; };
 		0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */; };
+		0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534424700C7900A8410C /* BaseViewProtocol.swift */; };
+		0CA1534724700E1400A8410C /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534624700E1400A8410C /* RouterType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		0CA1533C247006DD00A8410C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleViewProtocol.swift; sourceTree = "<group>"; };
+		0CA1534424700C7900A8410C /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		0CA1534624700E1400A8410C /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA153332470064400A8410C /* BaseView.swift */,
+				0CA1534424700C7900A8410C /* BaseViewProtocol.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA1533A247006A600A8410C /* BaseRouter.swift */,
+				0CA1534624700E1400A8410C /* RouterType.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -239,7 +245,9 @@
 				0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */,
 				0CA153342470064400A8410C /* BaseView.swift in Sources */,
 				0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */,
+				0CA1534724700E1400A8410C /* RouterType.swift in Sources */,
 				0CA1533B247006A600A8410C /* BaseRouter.swift in Sources */,
+				0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.grodno..MVVMplusR;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.grodno..MVVMplusR;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

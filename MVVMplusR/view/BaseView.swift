@@ -10,7 +10,7 @@ import UIKit
 
 typealias ViewType = UIViewController
 
-class BaseView<ViewModel: BaseViewModelProtocol>: ViewType {
+class BaseView<ViewModel: BaseViewModelProtocol>: ViewType, BaseViewProtocol {
 
     var viewModel: ViewModel?
 
@@ -43,6 +43,8 @@ class BaseView<ViewModel: BaseViewModelProtocol>: ViewType {
         viewModel?.onViewDidDisappear()
     }
 
+    // MARK: BaseViewProtocol
+    
     func setup() {
 
     }
