@@ -10,6 +10,11 @@
 		0CA15323247004F300A8410C /* MVVMplusR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA15319247004F300A8410C /* MVVMplusR.framework */; };
 		0CA15328247004F300A8410C /* MVVMplusRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA15327247004F300A8410C /* MVVMplusRTests.swift */; };
 		0CA1532A247004F300A8410C /* MVVMplusR.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA1531C247004F300A8410C /* MVVMplusR.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CA153342470064400A8410C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA153332470064400A8410C /* BaseView.swift */; };
+		0CA1533B247006A600A8410C /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1533A247006A600A8410C /* BaseRouter.swift */; };
+		0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1533C247006DD00A8410C /* BaseViewModel.swift */; };
+		0CA1533F247006F300A8410C /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */; };
+		0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		0CA15322247004F300A8410C /* MVVMplusRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMplusRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA15327247004F300A8410C /* MVVMplusRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMplusRTests.swift; sourceTree = "<group>"; };
 		0CA15329247004F300A8410C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA153332470064400A8410C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0CA1533A247006A600A8410C /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		0CA1533C247006DD00A8410C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
+		0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		0CA1531B247004F300A8410C /* MVVMplusR */ = {
 			isa = PBXGroup;
 			children = (
+				0CA153392470069500A8410C /* router */,
+				0CA153382470068700A8410C /* viewModel */,
+				0CA153372470067D00A8410C /* view */,
 				0CA1531C247004F300A8410C /* MVVMplusR.h */,
 				0CA1531D247004F300A8410C /* Info.plist */,
 			);
@@ -84,6 +97,32 @@
 				0CA15329247004F300A8410C /* Info.plist */,
 			);
 			path = MVVMplusRTests;
+			sourceTree = "<group>";
+		};
+		0CA153372470067D00A8410C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0CA153332470064400A8410C /* BaseView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0CA153382470068700A8410C /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CA1533C247006DD00A8410C /* BaseViewModel.swift */,
+				0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */,
+				0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		0CA153392470069500A8410C /* router */ = {
+			isa = PBXGroup;
+			children = (
+				0CA1533A247006A600A8410C /* BaseRouter.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +187,7 @@
 				TargetAttributes = {
 					0CA15318247004F300A8410C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					0CA15321247004F300A8410C = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA1533F247006F300A8410C /* BaseViewModelProtocol.swift in Sources */,
+				0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */,
+				0CA153342470064400A8410C /* BaseView.swift in Sources */,
+				0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */,
+				0CA1533B247006A600A8410C /* BaseRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +385,7 @@
 		0CA1532E247004F300A8410C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -356,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.grodno..MVVMplusR;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +411,7 @@
 		0CA1532F247004F300A8410C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -388,6 +436,7 @@
 		0CA15331247004F300A8410C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = MVVMplusRTests/Info.plist;
@@ -406,6 +455,7 @@
 		0CA15332247004F300A8410C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = MVVMplusRTests/Info.plist;
