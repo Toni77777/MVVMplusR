@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RouterType: class {
+public protocol RouterType: class {
     
     var view: ViewType? { get }
 }

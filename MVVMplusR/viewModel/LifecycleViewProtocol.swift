@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LifecycleViewProtocol {
+public protocol LifecycleViewProtocol {
 
     /// Called on viewDidLoad
     func onViewDidLoad()

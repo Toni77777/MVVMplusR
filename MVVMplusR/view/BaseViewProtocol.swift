@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BaseViewProtocol {
+public protocol BaseViewProtocol {
 
     func setup()
 

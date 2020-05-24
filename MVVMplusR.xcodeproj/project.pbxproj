@@ -17,6 +17,7 @@
 		0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */; };
 		0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534424700C7900A8410C /* BaseViewProtocol.swift */; };
 		0CA1534724700E1400A8410C /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534624700E1400A8410C /* RouterType.swift */; };
+		A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FEE5F247AB6CB005D4053 /* SessionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleViewProtocol.swift; sourceTree = "<group>"; };
 		0CA1534424700C7900A8410C /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		0CA1534624700E1400A8410C /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		A07FEE5F247AB6CB005D4053 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				0CA153392470069500A8410C /* router */,
 				0CA153382470068700A8410C /* viewModel */,
 				0CA153372470067D00A8410C /* view */,
+				A07FEE5E247AB69E005D4053 /* di */,
 				0CA1531C247004F300A8410C /* MVVMplusR.h */,
 				0CA1531D247004F300A8410C /* Info.plist */,
 			);
@@ -129,6 +132,14 @@
 				0CA1534624700E1400A8410C /* RouterType.swift */,
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		A07FEE5E247AB69E005D4053 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				A07FEE5F247AB6CB005D4053 /* SessionType.swift */,
+			);
+			path = di;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 			files = (
 				0CA1533F247006F300A8410C /* BaseViewModelProtocol.swift in Sources */,
 				0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */,
+				A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */,
 				0CA153342470064400A8410C /* BaseView.swift in Sources */,
 				0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */,
 				0CA1534724700E1400A8410C /* RouterType.swift in Sources */,

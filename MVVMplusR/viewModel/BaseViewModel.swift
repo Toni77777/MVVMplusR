@@ -8,33 +8,35 @@
 
 import Foundation
 
-class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
+public class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
+    
+    public let session: SessionType?
+    public let router: Router?
 
-    let router: Router?
-
-    init(router: Router? = nil) {
+    init(session: SessionType? = nil, router: Router? = nil) {
+        self.session = session
         self.router = router
     }
 
     // MARK: View Lifecycle
     
-    func onViewDidLoad() {
+    public func onViewDidLoad() {
 
     }
 
-    func onViewWillAppear() {
+    public func onViewWillAppear() {
 
     }
 
-    func onViewDidAppear() {
+    public func onViewDidAppear() {
 
     }
 
-    func onViewWillDisappear() {
+    public func onViewWillDisappear() {
 
     }
 
-    func onViewDidDisappear() {
+    public func onViewDidDisappear() {
 
     }
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol BaseViewModelProtocol: LifecycleViewProtocol {
+public protocol BaseViewModelProtocol: LifecycleViewProtocol {
 
 }
