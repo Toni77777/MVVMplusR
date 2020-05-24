@@ -10,46 +10,46 @@ import UIKit
 
 public typealias ViewType = UIViewController
 
-public class BaseView<ViewModel: BaseViewModelProtocol>: ViewType, BaseViewProtocol {
+open class BaseView<ViewModel: BaseViewModelProtocol>: ViewType, BaseViewProtocol {
 
-    var viewModel: ViewModel?
+    open var viewModel: ViewModel?
 
     // MARK: Lifecycle
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         bindViewModel()
         viewModel?.onViewDidLoad()
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel?.onViewWillAppear()
     }
 
-    public override func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewModel?.onViewDidAppear()
     }
 
-    public override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         viewModel?.onViewWillDisappear()
     }
 
-    public override func viewDidDisappear(_ animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         viewModel?.onViewDidDisappear()
     }
 
     // MARK: BaseViewProtocol
     
-    public func setup() {
+    open func setup() {
 
     }
 
-    public func bindViewModel() {
+    open func bindViewModel() {
 
     }
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class BaseRouter: RouterType {
+open class BaseRouter: RouterType {
 
-    public weak var view: ViewType?
+    open weak var view: ViewType?
 
     init(view: ViewType) {
         self.view = view

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
+open class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
     
     public let session: SessionType?
     public let router: Router?
@@ -20,23 +20,23 @@ public class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
 
     // MARK: View Lifecycle
     
-    public func onViewDidLoad() {
+    open func onViewDidLoad() {
 
     }
 
-    public func onViewWillAppear() {
+    open func onViewWillAppear() {
 
     }
 
-    public func onViewDidAppear() {
+    open func onViewDidAppear() {
 
     }
 
-    public func onViewWillDisappear() {
+    open func onViewWillDisappear() {
 
     }
 
-    public func onViewDidDisappear() {
+    open func onViewDidDisappear() {
 
     }
 }
