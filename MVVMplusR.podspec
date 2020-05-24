@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MVVMplusR"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "MVVMplusR"
   spec.description  = "MVVMplusR - library provide base componets (Base-View/ViewModel/Router) for MVVM+R architecture"
   spec.homepage     = "https://github.com/Toni77777/MVVMplusR"
