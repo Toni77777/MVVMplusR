@@ -13,7 +13,7 @@ open class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
     public let session: SessionType?
     public let router: Router?
 
-    init(session: SessionType? = nil, router: Router? = nil) {
+    public init(session: SessionType? = nil, router: Router? = nil) {
         self.session = session
         self.router = router
     }

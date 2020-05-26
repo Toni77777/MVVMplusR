@@ -12,7 +12,7 @@ open class BaseRouter: RouterType {
 
     open weak var view: ViewType?
 
-    init(view: ViewType) {
+    public init(view: ViewType) {
         self.view = view
     }
 }
