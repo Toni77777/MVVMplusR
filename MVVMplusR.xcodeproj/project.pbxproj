@@ -17,6 +17,7 @@
 		0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */; };
 		0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534424700C7900A8410C /* BaseViewProtocol.swift */; };
 		0CA1534724700E1400A8410C /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534624700E1400A8410C /* RouterType.swift */; };
+		A069EDA9247E6B790096B31A /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */; };
 		A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FEE5F247AB6CB005D4053 /* SessionType.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleViewProtocol.swift; sourceTree = "<group>"; };
 		0CA1534424700C7900A8410C /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		0CA1534624700E1400A8410C /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		A07FEE5F247AB6CB005D4053 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				0CA153382470068700A8410C /* viewModel */,
 				0CA153372470067D00A8410C /* view */,
 				A07FEE5E247AB69E005D4053 /* di */,
+				A069EDA7247E6B470096B31A /* builder */,
 				0CA1531C247004F300A8410C /* MVVMplusR.h */,
 				0CA1531D247004F300A8410C /* Info.plist */,
 			);
@@ -132,6 +135,14 @@
 				0CA1534624700E1400A8410C /* RouterType.swift */,
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		A069EDA7247E6B470096B31A /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */,
+			);
+			path = builder;
 			sourceTree = "<group>";
 		};
 		A07FEE5E247AB69E005D4053 /* di */ = {
@@ -260,6 +271,7 @@
 				0CA1534724700E1400A8410C /* RouterType.swift in Sources */,
 				0CA1533B247006A600A8410C /* BaseRouter.swift in Sources */,
 				0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */,
+				A069EDA9247E6B790096B31A /* ModuleBuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
