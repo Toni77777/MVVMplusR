@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ModuleBuilderProtocol {
+public protocol ModuleBuilderProtocol {
     
     associatedtype ModuleViewType
 
