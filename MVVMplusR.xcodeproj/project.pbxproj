@@ -19,6 +19,7 @@
 		0CA1534724700E1400A8410C /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534624700E1400A8410C /* RouterType.swift */; };
 		A069EDA9247E6B790096B31A /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */; };
 		A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FEE5F247AB6CB005D4053 /* SessionType.swift */; };
+		A0E40AAC24812BE800332EF6 /* SectionItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E40AAB24812BE800332EF6 /* SectionItemsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0CA1534624700E1400A8410C /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		A07FEE5F247AB6CB005D4053 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		A0E40AAB24812BE800332EF6 /* SectionItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				0CA153372470067D00A8410C /* view */,
 				A07FEE5E247AB69E005D4053 /* di */,
 				A069EDA7247E6B470096B31A /* builder */,
+				A0E40AAD24812C0900332EF6 /* extensions */,
 				0CA1531C247004F300A8410C /* MVVMplusR.h */,
 				0CA1531D247004F300A8410C /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 				0CA1533C247006DD00A8410C /* BaseViewModel.swift */,
 				0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */,
 				0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */,
+				A0E40AAB24812BE800332EF6 /* SectionItemsViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -151,6 +155,13 @@
 				A07FEE5F247AB6CB005D4053 /* SessionType.swift */,
 			);
 			path = di;
+			sourceTree = "<group>";
+		};
+		A0E40AAD24812C0900332EF6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				0CA1533F247006F300A8410C /* BaseViewModelProtocol.swift in Sources */,
 				0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */,
 				A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */,
+				A0E40AAC24812BE800332EF6 /* SectionItemsViewModel.swift in Sources */,
 				0CA153342470064400A8410C /* BaseView.swift in Sources */,
 				0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */,
 				0CA1534724700E1400A8410C /* RouterType.swift in Sources */,
