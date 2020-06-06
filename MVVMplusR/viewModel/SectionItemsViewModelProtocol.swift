@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SectionItemsViewModel {
+protocol SectionItemsViewModelProtocol {
     
     associatedtype Item
     
@@ -21,7 +21,7 @@ protocol SectionItemsViewModel {
     func item(at indexPath: IndexPath) -> Item?
 }
 
-extension SectionItemsViewModel {
+extension SectionItemsViewModelProtocol {
     
     func section(at index: Int) -> Section? {
         guard index >= 0, sections.count > index else { return nil }
