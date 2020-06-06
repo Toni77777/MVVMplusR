@@ -11,8 +11,11 @@ import Foundation
 open class BaseRouter: RouterType {
 
     open weak var view: ViewType?
+    
+    open var session: SessionType?
 
-    public init(view: ViewType) {
+    public init(view: ViewType, session: SessionType? = nil) {
         self.view = view
+        self.session = session
     }
 }

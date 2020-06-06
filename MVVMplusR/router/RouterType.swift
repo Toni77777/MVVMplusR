@@ -11,4 +11,6 @@ import Foundation
 public protocol RouterType: class {
     
     var view: ViewType? { get }
+    
+    var session: SessionType? { get }
 }
