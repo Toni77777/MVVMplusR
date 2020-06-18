@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ItemsViewModelProtocol {
+public protocol ItemsViewModelProtocol {
     
     associatedtype Item
     
