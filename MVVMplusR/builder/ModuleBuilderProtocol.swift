@@ -9,8 +9,21 @@
 import Foundation
 
 public protocol ModuleBuilderProtocol {
-    
+
     associatedtype ModuleViewType
 
     func makeModule(session: SessionType) -> ModuleViewType
+
+    func makeModule() -> ModuleViewType
+}
+
+public extension ModuleBuilderProtocol {
+
+    func makeModule(session: SessionType) -> ModuleViewType {
+        fatalError("Does not implemented. If need call function, must override and implement")
+    }
+
+    func makeModule() -> ModuleViewType {
+        fatalError("Does not implemented. If need call function, must override and implement")
+    }
 }

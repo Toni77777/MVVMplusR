@@ -17,7 +17,7 @@ public protocol ItemsViewModelProtocol {
     func item(at rowIndex: Int) -> Item?
 }
 
-extension ItemsViewModelProtocol {
+public extension ItemsViewModelProtocol {
     
     func item(at rowIndex: Int) -> Item? {
         guard rowIndex >= 0, items.count > rowIndex else { return nil }
