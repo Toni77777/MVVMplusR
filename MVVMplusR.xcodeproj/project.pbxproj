@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA0D51E24D55FA20011C670 /* ViewModelTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0D51D24D55FA20011C670 /* ViewModelTransformable.swift */; };
 		0CA15323247004F300A8410C /* MVVMplusR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA15319247004F300A8410C /* MVVMplusR.framework */; };
 		0CA15328247004F300A8410C /* MVVMplusRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA15327247004F300A8410C /* MVVMplusRTests.swift */; };
 		0CA1532A247004F300A8410C /* MVVMplusR.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA1531C247004F300A8410C /* MVVMplusR.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CA0D51D24D55FA20011C670 /* ViewModelTransformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTransformable.swift; sourceTree = "<group>"; };
 		0CA15319247004F300A8410C /* MVVMplusR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVVMplusR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA1531C247004F300A8410C /* MVVMplusR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMplusR.h; sourceTree = "<group>"; };
 		0CA1531D247004F300A8410C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */,
 				A0E40AAB24812BE800332EF6 /* SectionItemsViewModelProtocol.swift */,
 				A00614C5248B9E910080D1B9 /* ItemsViewModelProtocol.swift */,
+				0CA0D51D24D55FA20011C670 /* ViewModelTransformable.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				0CA1533B247006A600A8410C /* BaseRouter.swift in Sources */,
 				0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */,
 				A069EDA9247E6B790096B31A /* ModuleBuilderProtocol.swift in Sources */,
+				0CA0D51E24D55FA20011C670 /* ViewModelTransformable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

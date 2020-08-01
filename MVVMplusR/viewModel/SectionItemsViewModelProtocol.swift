@@ -21,7 +21,7 @@ public protocol SectionItemsViewModelProtocol {
     func item(at indexPath: IndexPath) -> Item?
 }
 
-extension SectionItemsViewModelProtocol {
+public extension SectionItemsViewModelProtocol {
     
     func section(at index: Int) -> Section? {
         guard index >= 0, sections.count > index else { return nil }
