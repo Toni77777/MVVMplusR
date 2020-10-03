@@ -10,20 +10,20 @@ import Foundation
 
 public protocol SceneBuilderProtocol {
 
-    associatedtype ModuleViewType
+    associatedtype SceneViewType
 
-    func makeModule(session: SessionType) -> ModuleViewType
+    func makeScene(session: SessionType) -> SceneViewType
 
-    func makeModule() -> ModuleViewType
+    func makeScene() -> SceneViewType
 }
 
 public extension SceneBuilderProtocol {
 
-    func makeModule(session: SessionType) -> ModuleViewType {
+    func makeScene(session: SessionType) -> SceneViewType {
         fatalError("Does not implemented. If need call function, must override and implement")
     }
 
-    func makeModule() -> ModuleViewType {
+    func makeScene() -> SceneViewType {
         fatalError("Does not implemented. If need call function, must override and implement")
     }
 }
