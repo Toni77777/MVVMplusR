@@ -11,10 +11,12 @@ import UIKit
 public typealias ViewType = UIViewController
 
 open class BaseView<ViewModel: BaseViewModelProtocol>: ViewType, BaseViewProtocol {
-
+    
+    // MARK: - Properties
+    
     open var viewModel: ViewModel?
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
 
     open override func viewDidLoad() {
         super.viewDidLoad()

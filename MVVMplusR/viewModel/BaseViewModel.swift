@@ -10,15 +10,19 @@ import Foundation
 
 open class BaseViewModel<Router: RouterType>: BaseViewModelProtocol {
     
+    // MARK: - Properties
+    
     public let session: SessionType?
     public let router: Router?
+    
+    // MARK: - Init
 
     public init(session: SessionType? = nil, router: Router? = nil) {
         self.session = session
         self.router = router
     }
 
-    // MARK: View Lifecycle
+    // MARK: - View Lifecycle
     
     open func onViewDidLoad() {
 

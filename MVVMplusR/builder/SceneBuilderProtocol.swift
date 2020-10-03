@@ -1,5 +1,5 @@
 //
-//  ModuleBuilderProtocol.swift
+//  SceneBuilderProtocol.swift
 //  MVVMplusR
 //
 //  Created by Anton Polyakov on 5/27/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol ModuleBuilderProtocol {
+public protocol SceneBuilderProtocol {
 
     associatedtype ModuleViewType
 
@@ -17,7 +17,7 @@ public protocol ModuleBuilderProtocol {
     func makeModule() -> ModuleViewType
 }
 
-public extension ModuleBuilderProtocol {
+public extension SceneBuilderProtocol {
 
     func makeModule(session: SessionType) -> ModuleViewType {
         fatalError("Does not implemented. If need call function, must override and implement")

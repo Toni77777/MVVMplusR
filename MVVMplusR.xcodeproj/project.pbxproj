@@ -18,10 +18,8 @@
 		0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */; };
 		0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534424700C7900A8410C /* BaseViewProtocol.swift */; };
 		0CA1534724700E1400A8410C /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1534624700E1400A8410C /* RouterType.swift */; };
-		A00614C6248B9E910080D1B9 /* ItemsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614C5248B9E910080D1B9 /* ItemsViewModelProtocol.swift */; };
-		A069EDA9247E6B790096B31A /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */; };
+		A069EDA9247E6B790096B31A /* SceneBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A069EDA8247E6B790096B31A /* SceneBuilderProtocol.swift */; };
 		A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FEE5F247AB6CB005D4053 /* SessionType.swift */; };
-		A0E40AAC24812BE800332EF6 /* SectionItemsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E40AAB24812BE800332EF6 /* SectionItemsViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +47,8 @@
 		0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleViewProtocol.swift; sourceTree = "<group>"; };
 		0CA1534424700C7900A8410C /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		0CA1534624700E1400A8410C /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
-		A00614C5248B9E910080D1B9 /* ItemsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModelProtocol.swift; sourceTree = "<group>"; };
-		A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
+		A069EDA8247E6B790096B31A /* SceneBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBuilderProtocol.swift; sourceTree = "<group>"; };
 		A07FEE5F247AB6CB005D4053 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
-		A0E40AAB24812BE800332EF6 /* SectionItemsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemsViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +126,6 @@
 				0CA1533C247006DD00A8410C /* BaseViewModel.swift */,
 				0CA1533E247006F300A8410C /* BaseViewModelProtocol.swift */,
 				0CA153402470070D00A8410C /* LifecycleViewProtocol.swift */,
-				A0E40AAB24812BE800332EF6 /* SectionItemsViewModelProtocol.swift */,
-				A00614C5248B9E910080D1B9 /* ItemsViewModelProtocol.swift */,
 				0CA0D51D24D55FA20011C670 /* ViewModelTransformable.swift */,
 			);
 			path = viewModel;
@@ -149,7 +143,7 @@
 		A069EDA7247E6B470096B31A /* builder */ = {
 			isa = PBXGroup;
 			children = (
-				A069EDA8247E6B790096B31A /* ModuleBuilderProtocol.swift */,
+				A069EDA8247E6B790096B31A /* SceneBuilderProtocol.swift */,
 			);
 			path = builder;
 			sourceTree = "<group>";
@@ -275,14 +269,12 @@
 				0CA1533F247006F300A8410C /* BaseViewModelProtocol.swift in Sources */,
 				0CA153412470070D00A8410C /* LifecycleViewProtocol.swift in Sources */,
 				A07FEE60247AB6CB005D4053 /* SessionType.swift in Sources */,
-				A0E40AAC24812BE800332EF6 /* SectionItemsViewModelProtocol.swift in Sources */,
-				A00614C6248B9E910080D1B9 /* ItemsViewModelProtocol.swift in Sources */,
 				0CA153342470064400A8410C /* BaseView.swift in Sources */,
 				0CA1533D247006DD00A8410C /* BaseViewModel.swift in Sources */,
 				0CA1534724700E1400A8410C /* RouterType.swift in Sources */,
 				0CA1533B247006A600A8410C /* BaseRouter.swift in Sources */,
 				0CA1534524700C7900A8410C /* BaseViewProtocol.swift in Sources */,
-				A069EDA9247E6B790096B31A /* ModuleBuilderProtocol.swift in Sources */,
+				A069EDA9247E6B790096B31A /* SceneBuilderProtocol.swift in Sources */,
 				0CA0D51E24D55FA20011C670 /* ViewModelTransformable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
